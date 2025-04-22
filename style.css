@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.contenedor {
+    text-align: center;
+}
+
+#ahorcado {
+    margin: 20px auto;
+    height: 150px;
+    width: 100px;
+    position: relative;
+}
+
+.parte {
+    width: 4px;
+    background: #333;
+    display: none;
+    position: absolute;
+}
+
+.cabeza {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #333;
+    top: 0;
+    left: 35px;
+}
+
+.cuerpo {
+    height: 40px;
+    top: 30px;
+    left: 48px;
+}
+
+.brazo-izq {
+    height: 30px;
+    transform: rotate(-45deg);
+    top: 35px;
+    left: 25px;
+}
+
+.brazo-der {
+    height: 30px;
+    transform: rotate(45deg);
+    top: 35px;
+    left: 65px;
+}
+
+.pierna-izq {
+    height: 30px;
+    transform: rotate(-45deg);
+    top: 70px;
+    left: 35px;
+}
+
+.pierna-der {
+    height: 30px;
+    transform: rotate(45deg);
+    top: 70px;
+    left: 60px;
+}
+
+#palabra {
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+#teclado button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#reiniciar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
